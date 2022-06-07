@@ -19,5 +19,6 @@ output "cluster_dashboard_url" {
 
 output "kube_config" {
   value       = local.kube_config
+  sensitive   = true
   description = "LKE k8s config"
 }
